@@ -30,3 +30,21 @@ function multi(){
     var resp = document.getElementById("respMulti")
     resp.textContent = numero1 * numero2
 }
+
+function media(){
+
+    var n1 = document.getElementById("m1").valueAsNumber
+    var n2 = document.getElementById("m2").valueAsNumber
+    var n3 = document.getElementById("m3").valueAsNumber
+    var n4 = document.getElementById("m4").valueAsNumber
+    var n5 = document.getElementById("m5").valueAsNumber
+    var media = document.getElementById("media")
+    media.innerHTML = (n1+n2+n3+n4+n5b) / 5
+    var resposta = (n1+n2+n3+n4+n5) / 5
+    if(resposta >= 7){
+        media.style.color = 'green'
+    }else{
+        media.style.color = 'red'
+    }
+
+}
