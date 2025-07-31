@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media</title>
-    
+    <title>Média</title>
+    <link rel="stylesheet" href="mediaStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body class="background">
     <h1>Cálculo de média</h1>
     <br>
-    <label for="n1">Digite a nota 1</label><br>
-    <input type="number" id="n1"><br>
-    <label for="n2">Digite a nota 2</label><br>
-    <input type="number" id="n2"><br>
-    <label for="n3">Digite a nota 3</label><br>
-    <input type="number" id="n3"><br>
-    <label for="n4">Digite a nota 4</label><br>
-    <input type="number" id="n4"><br>
-    <label for="n5">Digite a nota 5</label><br>
-    <input type="number" id="n5"><br>
-    <button onclick="media()">Calcular</button>
+    <div class="container">
+        <label class="a" for="m1">Nota 01</label>
+        <input type="number" id="m1" placeholder="Digite um número">
+        <label for="m2">Nota 02</label>
+        <input type="number" id="m2" placeholder="Digite um número">
+        <label for="m3">Nota 03</label>
+        <input type="number" id="m3" placeholder="Digite um número">
+        <label for="m4">Nota 04</label>
+        <input type="number" id="m4" placeholder="Digite um número">
+        <label for="m5">Nota 05</label>
+        <input type="number" id="m5" placeholder="Digite um número">
+        <button class="btn" onclick="media()">CALCULAR</button>
+    </div>
     <h2 id="media"></h2>
+
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,86 @@
+body {
+    background: #202124;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .calculator {
+    background: #2e2e2e;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    padding: 20px;
+  }
+  
+  .display {
+    background: #1c1c1c;
+    color: #fff;
+    font-size: 2em;
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow-x: auto;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .btn {
+    background: #3b3b3b;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .btn:hover {
+    background: #4e4e4e;
+  }
+  
+  .operator {
+    background-color: #f57c00;
+  }
+  
+  .operator:hover {
+    background-color: #e65100;
+  }
+  
+  .equals {
+    background-color: #388e3c;
+    grid-row: span 2;
+  }
+  
+  .equals:hover {
+    background-color: #2e7d32;
+  }
+  
+  .clear {
+    background-color: #d32f2f;
+  }
+  
+  .clear:hover {
+    background-color: #b71c1c;
+  }
+  
+  .delete {
+    background-color: #7b1fa2;
+  }
+  
+  .delete:hover {
+    background-color: #6a1b9a;
+  }
+  
+  .zero {
+    grid-column: span 2;
+  }
