@@ -73,6 +73,46 @@ nav a:hover{
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrap-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ddddddd3;
+    width: 300px;
+    height: 320px;
+    border-radius: 20px;
+    box-shadow: #6806d7f5 0px 5px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    text-align: center;
+}
+
+.card:hover {
+    background-color: #ffffffc2;
+    box-shadow: #ffffff7c 0px 5px 100px;
+    cursor: pointer;
+}
+
+.card img {
+    border-radius: 15px;
+    padding: 20px;
+    background-color: white;
 }
 
 #s3 {
@@ -83,7 +123,7 @@ nav a:hover{
 
 #s4 {
     min-height: 100vh;
-    background-color: rgb(150, 44, 192);
+    background-color: rgb(67, 8, 90);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,4 +168,32 @@ nav a:hover{
 .formulario button:hover {
     cursor: pointer;
     opacity: 0.8;
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #dddddda0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer img {
+    border-radius: 100%;
+    transition: all 500ms ease-in-out;
+}
+
+footer img:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
